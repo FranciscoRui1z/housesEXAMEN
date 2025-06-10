@@ -16,6 +16,7 @@ import { HousingService } from '../housing.service';
       <form>
         <input type="text" placeholder="Filter by city" #filter>
         <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+        <a  class="primary" href="filtraToilets">Filtrar por numero de toilets</a>
       </form>
     </section>
     <section class="results">

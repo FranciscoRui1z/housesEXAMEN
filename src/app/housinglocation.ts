@@ -12,4 +12,7 @@ export interface HousingLocation {
   puertasReforzadas?: boolean;
   detectoresHumo?: boolean;
   status?: string;
+  toiletNum: number;
+  constructYear: number;
+  tieneAscensor?:boolean;
 }

@@ -1,0 +1,10 @@
+<section>
+   <input type="text" placeholder="Filter By num" #filter>
+        <button class="primary" type="button" (click)="filterResults(filter.value)">Filtra por numero de toilets de 0 a 5</button>
+</section>
+<section class="results">
+    <app-housing-location 
+        *ngFor="let housingLocation of filteredLocationList" 
+        [housingLocation]="housingLocation">
+    </app-housing-location>
+</section>
